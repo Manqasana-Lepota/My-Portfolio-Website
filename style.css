@@ -43,7 +43,7 @@ body , html {
   }
 
   .second-parallax {
-    background: url(skills-background.jpg);
+    background: url(skills2.png);
     min-height: 60%;
     background-repeat: no-repeat;
     background-position: center;
@@ -51,7 +51,7 @@ body , html {
   }
 
   .third-parallax {
-    background: url(parallex4.jpg);
+    background: url(contact2.jpg);
     min-height: 40%;
     background-repeat: no-repeat;
     background-position: center;
@@ -311,7 +311,7 @@ nav a:hover {
     grid-template-columns: repeat(4,1fr);
     padding: 20px;
 }
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .about-container {
         display: grid;
         grid-template-columns: 1;
@@ -332,7 +332,7 @@ nav a:hover {
         margin-right: 0px;
     }
     
-} */
+} 
 
 /*******************************My Skills Section***************************************/
 .my-skills {
@@ -529,7 +529,7 @@ nav a:hover {
 
 @media screen and (max-width: 800px) {
     .contacts-info {
-        flex-direction: column;
+        display: grid;
     }
     .contact{
         width: 100%;
@@ -538,7 +538,9 @@ nav a:hover {
     }
 }
 .form {
-    position: grid;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: minmax(400px);
     margin-left: 300px;
     padding-top: 60px;
     text-align: center;
